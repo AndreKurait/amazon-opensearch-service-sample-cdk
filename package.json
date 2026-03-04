@@ -18,13 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aws-samples/amazon-opensearch-service-sample-cdk.git",
-    "directory": "/"
+    "url": "https://github.com/AndreKurait/amazon-opensearch-service-sample-cdk.git"
   },
   "bugs": {
-    "url": "https://github.com/aws-samples/amazon-opensearch-service-sample-cdk/issues"
+    "url": "https://github.com/AndreKurait/amazon-opensearch-service-sample-cdk/issues"
   },
-  "homepage": "https://github.com/aws-samples/amazon-opensearch-service-sample-cdk#readme",
+  "homepage": "https://github.com/AndreKurait/amazon-opensearch-service-sample-cdk#readme",
   "engines": {
     "node": ">=18"
   },
