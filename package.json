@@ -1,7 +1,7 @@
 {
   "name": "opensearch-service-domain-cdk",
   "description": "CDK infrastructure for deploying search clusters to AWS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
   "files": [
@@ -11,6 +11,7 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/lib/index.d.ts",
       "import": "./dist/lib/index.js",
       "require": "./dist/lib/index.js"
     },
@@ -42,7 +43,7 @@
     "test:lint": "eslint .",
     "test:jest": "jest  --coverage",
     "clean": "rm -rf dist",
-    "release": "npm run build",
+    "prepublishOnly": "npm run build",
     "cdk": "cdk"
   },
   "devDependencies": {

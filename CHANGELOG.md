@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.1.2 - 2026-03-04
+
+### Changed
+- CI workflow now only runs on `main` branch pushes and PRs (no longer triggers redundantly on tag pushes)
+- Simplified CI `node-tests` job by removing unnecessary single-item matrix
+- Added `types` condition to package `exports` for proper TypeScript module resolution
+- Replaced `release` script with `prepublishOnly` to auto-build before `npm pack`/`npm publish`
+
 ## 0.1.1 - 2026-03-04
 
 ### Fixed

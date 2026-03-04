@@ -2,6 +2,7 @@ name: CI
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 env:
@@ -10,14 +11,6 @@ env:
 jobs:
   node-tests:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        npm-project:
-          - '.'
-    defaults:
-      run:
-        working-directory: ${{ matrix.npm-project }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
